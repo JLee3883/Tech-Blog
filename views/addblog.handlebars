@@ -1,0 +1,29 @@
+<div class="container" style="font-family: Fuzzy Bubbles, cursive; color: Black">
+<section class="card" style="width: 600px; height: auto;">
+    <h3 style="margin-top: 20px" id="title-">Add Blog</h3>
+        <form>
+            <div class="form-group">
+                <p>
+                    <label for="tripid"> Trip ID: {{trip.id}}</label>
+                </p>
+                <p>
+                    <label for="title">Title:*</label><input type="text" id="title" name="title" style="color: #000000 !important"></input>
+                </p>
+                <p>
+                    <label for="title">Blog:*</label>
+                </p>
+                <textarea name="message" id="message" rows="10" style="margin-top: -20px;"></textarea>
+                <p><label for="first">Picture/video:*</label></p>
+        {{!-- </form>
+        <form action="" method="POST" enctype="multipart/form-data"> --}}
+            <input type="file" id="file" name="file" aria-labelledby="file" accept="image/video" style="float: left;">
+            <div class="actions">
+                <button id="addBlog" class="button primary">Submit</button>
+            </div>
+        </form>
+
+    </section>
+</div>
+
+<script src="/js/addBlog.js"></script>
+

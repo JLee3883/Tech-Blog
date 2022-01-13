@@ -1,0 +1,9 @@
+  <div class="card">
+    <h3>View Blogs:</h3>
+
+    {{#each blogs as |blog|}}
+      <div id="blog-list">
+        <a id="view-all-blogs" href="/viewBlogs/{{blog.id}}">{{blog.title}}</a>
+      </div>
+    {{/each}}
+  </div>

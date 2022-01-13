@@ -1,0 +1,19 @@
+<header>
+  <h1 style="font-size: 45px;" id="title-name">Passport Quest</h1>
+</header>
+<nav>
+  <div class="navbar">
+
+    {{#if logged_in}}
+      <a class="jump" href="/userprofile">Profile</a>
+    {{else}}
+      <a class="jump" href="/login">Log In</a>
+      <a class="jump" href="/signup">Sign Up</a>
+    {{/if}}
+    <a class="jump" href="/profile">Passport</a>
+    <a class="jump" href="/">Home</a>
+    <a class="jump" id="logout">Log Out</a>
+    <script src="/js/logout.js"></script>
+    
+  </div>
+</nav>
